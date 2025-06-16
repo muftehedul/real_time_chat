@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Signup</title>
+  <style>
+    body {
+      background: #f4f6fb;
+      font-family: 'Segoe UI', Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .signup-container {
+      background: #fff;
+      padding: 2rem 2.5rem;
+      border-radius: 10px;
+      box-shadow: 0 4px 24px rgba(0,0,0,0.08);
+      min-width: 320px;
+      text-align: center;
+    }
+    .signup-container h2 {
+      margin-bottom: 1.5rem;
+      color: #333;
+    }
+    .signup-container form {
+      display: flex;
+      flex-direction: column;
+      gap: 1rem;
+    }
+    .signup-container input[type="text"],
+    .signup-container input[type="password"] {
+      padding: 0.7rem;
+      border: 1px solid #d1d5db;
+      border-radius: 5px;
+      font-size: 1rem;
+      outline: none;
+      transition: border 0.2s;
+    }
+    .signup-container input:focus {
+      border-color: #4f8cff;
+    }
+    .signup-container button[type="submit"] {
+      background: #4f8cff;
+      color: #fff;
+      border: none;
+      padding: 0.7rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .signup-container button[type="submit"]:hover {
+      background: #2563eb;
+    }
+    .login-link {
+      margin-top: 1rem;
+      display: block;
+      text-align: center;
+    }
+    .login-link button {
+      background: #e5e7eb;
+      color: #333;
+      border: none;
+      padding: 0.6rem 1.2rem;
+      border-radius: 5px;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .login-link button:hover {
+      background: #cbd5e1;
+    }
+    label {
+      text-align: left;
+      font-size: 0.97rem;
+      color: #444;
+      margin-bottom: 0.2rem;
+      display: block;
+    }
+  </style>
+</head>
+<body>
+  <div class="signup-container">
+    <h2>Signup</h2>
+    <form method="POST">
+      <label for="username">Username</label>
+      <input type="text" name="username" id="username" required>
+      <label for="password">Password</label>
+      <input type="password" name="password" id="password" required>
+      <button type="submit">Sign Up</button>
+    </form>
+    <div class="login-link">
+      <a href="/login"><button type="button">Login</button></a>
+    </div>
+  </div>
+</body>
+</html>
